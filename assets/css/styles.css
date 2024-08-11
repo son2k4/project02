@@ -426,3 +426,77 @@ body {
 .course-item .btn-course:hover {
     background-color: #ffb900;
 }
+
+/* feedback */
+
+.feedback {
+    margin-top: 135px;
+    background: #2e2100;
+}
+
+.feedback .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 96px 0;
+}
+
+.feedback .face {
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+}
+
+.feedback .infor {
+    position: relative;
+}
+
+.feedback .infor .desc {
+    width: 740px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
+}
+
+.feedback .writer .name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.feedback .writer .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.feedback .writer .dots {
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+}
+
+.feedback .writer .dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #634700;
+}
+
+.feedback .writer .dot-active {
+    background-color: #ffb900;
+}
+
+.feedback .infor .comment {
+    position: absolute;
+    left: -30px;
+    top: -30px;
+}
