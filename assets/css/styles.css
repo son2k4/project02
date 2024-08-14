@@ -93,9 +93,9 @@ body {
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
     min-width: 118px;
     height: 50px;
     border-radius: 25px;
@@ -110,7 +110,6 @@ body {
     background: #171100;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1.75;
     margin-left: 70px;
 }
 
@@ -256,7 +255,7 @@ body {
     border-radius: 32px;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1.67;
+    line-height: 4;
 }
 
 .hero-infor .desc-after {
@@ -489,10 +488,12 @@ body {
     height: 6px;
     border-radius: 50%;
     background-color: #634700;
+    cursor: pointer;
 }
 
 .feedback .writer .dot-active {
     background-color: #ffb900;
+    cursor: default;
 }
 
 .feedback .infor .comment {
@@ -553,7 +554,7 @@ body {
 }
 
 .feature .infor .btn {
-    width: 137px;
+    min-width: 137px;
     margin-top: 32px;
 }
 
@@ -570,4 +571,211 @@ body {
 
 .feature-nth2 .block {
     flex-direction: row-reverse;
+}
+
+/* blog */
+.blog {
+    padding: 96px 0;
+    margin-top: 135px;
+    background: #fffcf4;
+}
+
+.blog .infor .subtitle {
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.076rem;
+}
+
+.blog .infor .desc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    color: #696262;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 16px;
+}
+
+.blog .list-items {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.blog .item {
+    flex: 1;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.blog .item:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog .list-items .image-blog {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog .desc-img {
+    padding: 20px 20px 28px 20px;
+}
+
+.blog .item .desc {
+    width: 330px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-top: 25px;
+}
+
+.blog .desc-img span {
+    margin-left: 10px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    position: relative;
+}
+
+.blog .desc-img .btn {
+    margin-top: 12px;
+    background: #171100;
+}
+
+.blog .desc-img .btn:hover {
+    background: #ffb900;
+}
+
+.blog .desc-img span::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffb900;
+    left: -10px;
+    bottom: 7px;
+}
+
+.blog .desc-img span::after {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+    left: -10px;
+    bottom: -12px;
+}
+
+.blog .dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 38px;
+    justify-content: center;
+}
+
+.blog .dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #634700;
+    cursor: pointer;
+}
+
+.blog .dot-active {
+    cursor: default;
+    background: #ffb900;
+}
+
+/* footer */
+
+.footer {
+    background-color: #2e2100;
+    padding: 96px 0 28px;
+}
+
+.footer .block {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .block .column {
+    width: 21.6%;
+}
+
+.footer .block .column:first-child {
+    width: 35%;
+}
+
+.footer .column .desc {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    width: 267px;
+    margin-top: 18px;
+}
+
+.footer .social {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .column .title {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    border-bottom: 1px solid #59554b;
+    padding: 0 48px 14px 0;
+}
+
+.footer ul {
+    margin-top: 28px;
+}
+
+.footer li {
+    margin-top: 12px;
+}
+
+.footer .column a {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .column a strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.footer .desc-end {
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    margin-top: 28px;
 }
